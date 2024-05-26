@@ -298,7 +298,16 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
+// $primary:       $blue !default;
+$primary:       #000; // custom
+$primary-800:   #1E1E1E; // custom
+$primary-700:   #3B3B3B; // custom
+$primary-600:   #5B5B5B; // custom
+$primary-500:   #919191; // custom
+$primary-400:   #C1C1C1; // custom
+$primary-300:   #E9E9E9; // custom
+$primary-200:   #F1F1F1; // custom
+$primary-100:   #FAFAFA; // custom
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -372,13 +381,32 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 
 // scss-docs-start spacer-variables-maps
 $spacer: 1rem !default;
+// $spacers: (
+//   0: 0,
+//   1: $spacer * .25,
+//   2: $spacer * .5,
+//   3: $spacer,
+//   4: $spacer * 1.5,
+//   5: $spacer * 3,
+// ) !default;
+
+// custom
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  1: $spacer * .25,   // 4
+  2: $spacer * .5,    // 8
+  3: $spacer * .75,   // 12
+  4: $spacer ,        // 16
+  5: $spacer * 1.25,  // 20
+  6: $spacer * 1.5,   // 24
+  8: $spacer * 2,     // 32
+  10: $spacer * 2.5,   // 40
+  12: $spacer * 3,     // 48
+  14: $spacer * 3.5,  // 56
+  15: $spacer * 3.75, // 60
+  18: $spacer * 4.5,  // 72
+  20: $spacer * 5,    // 80
+  30: $spacer * 7.5  // 120
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -540,7 +568,7 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:      system-ui, -apple-system, "Noto Sans","Segoe UI", Roboto, "Helvetica Neue",  "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--#{$prefix}font-sans-serif) !default;
@@ -566,22 +594,34 @@ $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
+// $h1-font-size:                $font-size-base * 2.5 !default;
+// $h2-font-size:                $font-size-base * 2 !default;
+// $h3-font-size:                $font-size-base * 1.75 !default;
+// $h4-font-size:                $font-size-base * 1.5 !default;
+// $h5-font-size:                $font-size-base * 1.25 !default;
+// $h6-font-size:                $font-size-base !default;
+
+// custom
+$h1-font-size:                $font-size-base * 4.5 !default;
+$h2-font-size:                $font-size-base * 3 !default;
+$h3-font-size:                $font-size-base * 2.5 !default;
+$h4-font-size:                $font-size-base * 2 !default;
+$h5-font-size:                $font-size-base * 1.75 !default;
+$h6-font-size:                $font-size-base * 1.5 !default;
+$h7-font-size:                $font-size-base * 1.25 !default;
+$h8-font-size:                $font-size-base !default;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
 $font-sizes: (
-  1: $h1-font-size,
-  2: $h2-font-size,
-  3: $h3-font-size,
-  4: $h4-font-size,
-  5: $h5-font-size,
-  6: $h6-font-size
+  1: $h1-font-size,  // 72
+  2: $h2-font-size,  // 48
+  3: $h3-font-size,  // 40
+  4: $h4-font-size,  // 32
+  5: $h5-font-size,  // 28
+  6: $h6-font-size,  // 24
+  7: $h7-font-size,  // 20 // custom
+  8: $h8-font-size   // 16 // custom
 ) !default;
 // scss-docs-end font-sizes
 
