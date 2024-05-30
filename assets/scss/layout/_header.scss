@@ -1,4 +1,53 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.btn-active {
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.close {
+  display: none;
+}
+
+ul .active {
+  font-weight: bold;
+  ::before,::after {
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+}
+
+.nav-item:hover {
+  font-weight: bold;
+  ::before,::after {
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+}
+
+.nav-link {
+  display: inline;
+  color: $primary;
+  padding: 4px 8px;
+  position: relative;
+  &::before,&::after{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #919191;
+    opacity: 0;
+    -webkit-box-reflect: below 16px;
+  }
+  &::before {
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+  }
+  &::after {
+    top: 0;
+    right: 0;
+    border-left: none;
+    border-bottom: none;
+  }
+
 }
