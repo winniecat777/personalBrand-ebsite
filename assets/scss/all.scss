@@ -4,7 +4,7 @@
 @import './utils/utilities';
 @import './utils/font';
 @import "../../node_modules/bootstrap";
-
+@import './mixins/breakpoints';
 @import './utils/base';
 
 @import './layout/header.scss';
