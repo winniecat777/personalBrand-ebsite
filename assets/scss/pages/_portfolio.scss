@@ -1,0 +1,110 @@
+.slogan {
+  width: 670px;
+  padding: 59px 71px;
+  margin: 0 auto;
+  position: relative;
+  background-image: url(/assets/images/quote-left.png);
+  background-repeat: no-repeat;
+  background-position: top 0 left 50px;
+  @include pad {
+    max-width: 300px;
+    background-position: top center;
+    padding: 59px 0 0 0;
+    background-size: 64px 64px;
+  }
+}
+
+.slogan::after {
+  position: absolute;
+  content: "";
+  background-image: url(/assets/images/quote-right.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 72px;
+  height: 72px;
+  right: 50px;
+  bottom: 0;
+  @include pad {
+    display: none;
+  }
+}
+
+.mark1, .mark2 {
+  position: relative;
+}
+
+.underline-3::after {
+  position: absolute;
+  content: "";
+  background-image: url(/assets/images/mark.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 122px;
+  height: 8px;
+  bottom: 0px;
+  left: -10px;
+  z-index: -1;
+}
+
+.experience {
+  width: 636px;
+  margin: 0 auto;
+  @include pad {
+    flex-direction: column;
+    width: 235px;
+  }
+}
+
+.underline-4 {
+  width: 24px;
+}
+
+.tag:hover {
+  color: $white;
+  background: $primary-800;
+}
+
+.modal-lg {
+  max-width: 1076px;
+}
+
+.modal-slogan {
+  color: #919191;
+}
+.modal-introduce {
+  @include pad {
+    flex-direction: column;
+  }
+}
+
+.modal-principle {
+  @include pad {
+    display: none;
+  }
+}
+
+.modal-principle-mobile {
+  @include pad {
+    display: block;
+    padding-top: 24px;
+    box-shadow: 0px -1px $primary-200;
+    text-align: center;
+  }
+}
+
+.page-item {
+  padding: 2px 13px;
+  border-radius: 4px;
+  &:hover {
+    border: 1px solid $primary-400;
+  }
+  &:active {
+    color: $white;
+    background: $primary-800;
+  }
+}
+
+.page-active {
+  color: $white;
+  background: $primary-800;
+}
