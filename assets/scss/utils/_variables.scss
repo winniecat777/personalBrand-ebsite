@@ -295,19 +295,20 @@ $cyans: (
   "cyan-800": $cyan-800,
   "cyan-900": $cyan-900
 ) !default;
+
 // fusv-enable
 
 // scss-docs-start theme-color-variables
 // $primary:       $blue !default;
 $primary:       #000; // custom
-$primary-800:   #1E1E1E; // custom
-$primary-700:   #3B3B3B; // custom
-$primary-600:   #5B5B5B; // custom
-$primary-500:   #919191; // custom
-$primary-400:   #C1C1C1; // custom
-$primary-300:   #E9E9E9; // custom
-$primary-200:   #F1F1F1; // custom
 $primary-100:   #FAFAFA; // custom
+$primary-200:   #F1F1F1; // custom
+$primary-300:   #E9E9E9; // custom
+$primary-400:   #C1C1C1; // custom
+$primary-500:   #919191; // custom
+$primary-600:   #5B5B5B; // custom
+$primary-700:   #3B3B3B; // custom
+$primary-800:   #1E1E1E; // custom
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -320,6 +321,14 @@ $dark:          $gray-900 !default;
 // scss-docs-start theme-colors-map
 $theme-colors: (
   "primary":    $primary,
+  "primary-100": $primary-100,
+  "primary-200": $primary-200,
+  "primary-300": $primary-300,
+  "primary-400": $primary-400,
+  "primary-500": $primary-500,
+  "primary-600": $primary-600,
+  "primary-700": $primary-700,
+  "primary-800": $primary-800,
   "secondary":  $secondary,
   "success":    $success,
   "info":       $info,
@@ -399,6 +408,7 @@ $spacers: (
   4: $spacer ,        // 16
   5: $spacer * 1.25,  // 20
   6: $spacer * 1.5,   // 24
+  7: $spacer * 1.75,  // 28
   8: $spacer * 2,     // 32
   10: $spacer * 2.5,   // 40
   12: $spacer * 3,     // 48
@@ -438,7 +448,8 @@ $body-text-align:           null !default;
 $link-color:                              $primary !default;
 $link-decoration:                         underline !default;
 $link-shade-percentage:                   20% !default;
-$link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
+// $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
+$link-hover-color:                        $primary !default;  //custom
 $link-hover-decoration:                   null !default;
 
 $stretched-link-pseudo-element:           after !default;
@@ -523,12 +534,13 @@ $border-color-translucent:    rgba($black, .175) !default;
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
-$border-radius:               .375rem !default;
-$border-radius-sm:            .25rem !default;
-$border-radius-lg:            .5rem !default;
-$border-radius-xl:            1rem !default;
-$border-radius-2xl:           2rem !default;
-$border-radius-pill:          50rem !default;
+$border-radius:               .375rem !default;  // 1: 6
+$border-radius-sm:            .25rem !default;   // 2: 4
+$border-radius-lg:            .5rem !default;    // 3: 8
+$border-radius-xl:            1rem !default;     // 4: 16
+// $border-radius-2xl:           2rem !default;     // 5: 32
+$border-radius-2xl:           1.25rem !default;     // 5: 20
+$border-radius-pill:          50rem !default;    // 6: 800
 // scss-docs-end border-radius-variables
 
 // scss-docs-start box-shadow-variables
@@ -605,26 +617,26 @@ $line-height-lg:              2 !default;
 // $h6-font-size:                $font-size-base !default;
 
 // custom
-$h1-font-size:                $font-size-base * 4.5 !default;
-$h2-font-size:                $font-size-base * 3 !default;
-$h3-font-size:                $font-size-base * 2.5 !default;
-$h4-font-size:                $font-size-base * 2 !default;
-$h5-font-size:                $font-size-base * 1.75 !default;
-$h6-font-size:                $font-size-base * 1.5 !default;
-$h7-font-size:                $font-size-base * 1.25 !default;
-$h8-font-size:                $font-size-base !default;
+$h1-font-size:                $font-size-base * 2.5 !default;
+$h2-font-size:                $font-size-base * 2 !default;
+$h3-font-size:                $font-size-base * 1.75 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default;
+$h7-font-size:                $font-size-base * 4.5 !default;
+$h8-font-size:                $font-size-base * 3 !default;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
 $font-sizes: (
-  1: $h1-font-size,  // 72
-  2: $h2-font-size,  // 48
-  3: $h3-font-size,  // 40
-  4: $h4-font-size,  // 32
-  5: $h5-font-size,  // 28
-  6: $h6-font-size,  // 24
-  7: $h7-font-size,  // 20 // custom
-  8: $h8-font-size   // 16 // custom
+  1: $h1-font-size,  // 40
+  2: $h2-font-size,  // 32
+  3: $h3-font-size,  // 28
+  4: $h4-font-size,  // 24
+  5: $h5-font-size,  // 20
+  6: $h6-font-size,  // 16
+  7: $h7-font-size,  // 72 // custom
+  8: $h8-font-size   // 48 // custom
 ) !default;
 // scss-docs-end font-sizes
 
@@ -1103,8 +1115,10 @@ $nav-link-padding-y:                .5rem !default;
 $nav-link-padding-x:                1rem !default;
 $nav-link-font-size:                null !default;
 $nav-link-font-weight:              null !default;
-$nav-link-color:                    var(--#{$prefix}link-color) !default;
-$nav-link-hover-color:              var(--#{$prefix}link-hover-color) !default;
+// $nav-link-color:                    var(--#{$prefix}link-color) !default;
+$nav-link-color:                    $primary !default;  // custom
+// $nav-link-hover-color:              var(--#{$prefix}link-hover-color) !default;
+$nav-link-hover-color:              $primary  !default;  // custom
 $nav-link-transition:               color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out !default;
 $nav-link-disabled-color:           $gray-600 !default;
 
@@ -1225,14 +1239,17 @@ $dropdown-dark-header-color:        $gray-500 !default;
 // Pagination
 
 // scss-docs-start pagination-variables
-$pagination-padding-y:              .375rem !default;
-$pagination-padding-x:              .75rem !default;
+// $pagination-padding-y:              .375rem !default;
+$pagination-padding-y:              .125rem !default;  // custom
+// $pagination-padding-x:              .75rem !default;
+$pagination-padding-x:              .813rem !default;  // custom
 $pagination-padding-y-sm:           .25rem !default;
 $pagination-padding-x-sm:           .5rem !default;
 $pagination-padding-y-lg:           .75rem !default;
 $pagination-padding-x-lg:           1.5rem !default;
 
-$pagination-font-size:              $font-size-base !default;
+// $pagination-font-size:              $font-size-base !default;
+$pagination-font-size:              1.5rem !default;  // custom
 
 $pagination-color:                  var(--#{$prefix}link-color) !default;
 $pagination-bg:                     $white !default;
@@ -1251,7 +1268,8 @@ $pagination-hover-bg:               $gray-200 !default;
 $pagination-hover-border-color:     $gray-300 !default;
 
 $pagination-active-color:           $component-active-color !default;
-$pagination-active-bg:              $component-active-bg !default;
+// $pagination-active-bg:              $component-active-bg !default;
+$pagination-active-bg:              $primary-800 !default;  // custom
 $pagination-active-border-color:    $pagination-active-bg !default;
 
 $pagination-disabled-color:         $gray-600 !default;
