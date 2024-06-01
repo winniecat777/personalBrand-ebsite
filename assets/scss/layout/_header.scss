@@ -1,3 +1,7 @@
+.navbar-brand {
+  padding: 0;
+}
+
 .btn-active {
   display: block;
   transition: all 0.3s ease;
@@ -7,12 +11,16 @@
   display: none;
 }
 
-ul .active {
-  font-weight: bold;
-  ::before,::after {
-    opacity: 1;
-    transition: all 0.3s ease;
-  }
+// ul .active {
+//   font-weight: bold;
+//   ::before,::after {
+//     opacity: 1;
+//     transition: all 0.3s ease;
+//   }
+// }
+
+.navbar-nav {
+  --bs-nav-link-hover-color: $primary;
 }
 
 .nav-item:hover {
