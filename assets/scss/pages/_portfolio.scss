@@ -59,10 +59,23 @@
   width: 24px;
 }
 
-.tag:hover {
-  color: $white;
-  background: $primary-800;
+.design-card {
+  @include pad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
+
+.tag {
+  color: $primary-700;
+  background: $primary-200;
+  &:hover {
+    color: $white;
+    background: $primary-800;
+  }
+}
+
 
 .modal-lg {
   max-width: 1076px;
