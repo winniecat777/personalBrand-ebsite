@@ -4,30 +4,208 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
+    <title>Noel | 首頁</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
   </head>
   <body>
     <%- include('./layout/header'); -%>
 
-    <main class="mt-14 mt-md-24">
-
-    </main>
-    <h1 class="index-title">我是首頁</h1>
-
-    <div class="card" style="width: 18rem">
-      <img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
+    <main class="introduction mt-14 mt-md-24 d-flex justify-content-end align-items-center">
+      <div class="self-introduction me-0 me-lg-6 py-10 py-lg-0 text-center text-xl-start">
+        <h2 class="fs-2 fs-lg-1 mb-6 text-primary-700">Hi！我是 Noel</h2>
+        <p class="fs-5 text-primary-600 mb-2">
+          具有 10 年經驗的 <br class="d-block d-xl-none"> <strong class="px-2 fw-normal position-relative underline-1">資深 UI 設計師</strong>兼<strong class="ps-2 fw-normal position-relative underline-2">前端工程師</strong>
         </p>
+        <p class="fs-5 text-primary-600 mb-4">技術雙修並行，<br class="d-block d-xl-none">熱衷於優化使用者的網頁體驗</p>
+        <p class="text-primary-400 mb-6 mb-lg-15">WEB DEVELOPMENT / BRANDING / UI / UX / APP DESIGN</p>
+        <ul class="d-flex gap-4 justify-content-center justify-content-xl-start">
+          <li><a href="###"><img class="social-icon" src="/assets/images/instagram.svg" alt="instagram"></a></li>
+          <li><a href="###"><img class="social-icon" src="/assets/images/facebook.svg" alt="facebook"></a></li>
+          <li><a href="###"><img class="social-icon" src="/assets/images/youtube.svg" alt="youtube"></a></li>
+        </ul>
       </div>
-    </div>
-
-
-
-
+      <img class="hero-lg d-none d-lg-block" src="/assets/images/hero-lg.png" alt="hero-lg">
+      <img class="hero-sm w-100 d-lg-none" src="/assets/images/hero-sm.png" alt="hero-sm">      
+    </main>
+    
+    <!-- 作品介紹 -->
+    <section class="pt-10 pb-20 pt-md-30 pb-md-0">
+      <div class="wrap">
+        <h2 class="title d-flex justify-content-center fs-4 fs-md-2 lh-sm mb-10 mb-md-20">
+          <span class="title-text">作品介紹</span>
+        </h2>
+      </div>
+      <!-- 星際旅行訂票平台 -->
+      <div class="work journey">
+        <div class="work-item container d-flex justify-content-center justify-content-lg-between align-items-center">
+          <img class="journey-img mt-20" src="/assets/images/homepage-work1.png" alt="journey">
+          <div class="work-content d-none d-lg-block px-0 px-md-10 pt-6 pb-0 pt-md-20 pb-md-14">
+            <div class="work-border border-bottom border-primary-200 mb-5 mb-md-10">
+              <h3 class="work-content-title fs-5 fs-md-3 mb-2 ">星際旅行訂票平台</h3>
+              <p class="work-content-text text-white mb-4 mb-md-6">悠遊宇宙的夢想，從這裡開始實現</p>
+              <ul class="d-flex gap-2 gap-md-4 mb-10">
+                <li><a class="tag-color px-3 py-1  rounded-pill" href="###">網頁設計</a></li>
+                <li><a class="tag-color px-3 py-1 rounded-pill" href="###">響應試設計</a></li>
+                <li><a class="tag-color px-3 py-1 rounded-pill" href="###">Bootstrap</a></li>
+              </ul>
+            </div>
+            <div class="d-flex justify-content-center">
+              <a class="intro-btn d-flex px-4 py-2 px-md-8 py-md-4 align-items-center" href="###">
+                完整介紹
+                <span class="material-symbols-rounded ms-2 align-middle">
+                  arrow_forward
+                </span>
+              </a>
+            </div>
+          </div> 
+        </div>
+      </div>
+      <!-- 手機版 -->
+      <div class="work-content d-lg-none px-0 mt-6 mb-12">
+        <div class="work-border text-center mb-5 mb-md-10">
+          <h3 class="work-content-title fs-5 fs-md-3 mb-2 ">星際旅行訂票平台</h3>
+          <p class="work-content-text mb-4 mb-md-6">悠遊宇宙的夢想，從這裡開始實現</p>
+          <ul class="d-flex justify-content-center gap-2 gap-md-4 mb-10">
+            <li><a class="tag-color px-3 py-1  rounded-pill" href="###">網頁設計</a></li>
+            <li><a class="tag-color px-3 py-1 rounded-pill" href="###">響應試設計</a></li>
+            <li><a class="tag-color px-3 py-1 rounded-pill" href="###">Bootstrap</a></li>
+          </ul>
+        </div>
+        <div class="d-flex justify-content-center">
+          <a class="intro-btn d-flex px-4 py-2 px-md-8 py-md-4 align-items-center" href="###">
+            完整介紹
+            <span class="material-symbols-rounded ms-2 align-middle">
+              arrow_forward
+            </span>
+          </a>
+        </div>
+      </div>
+      <!-- 理財APP -->
+      <div class="work app">
+        <div class="app-mask">
+          <div class="work-content app-content float-end mt-50 px-0 px-md-10 pt-6 pb-0 pt-md-20 pb-md-14">
+            <div class="work-border mb-5 mb-md-10">
+              <h3 class="work-content-title fs-5 fs-md-3 mb-2 ">理財APP</h3>
+              <p class="work-content-text text-white mb-4 mb-md-6">連動帳戶與行動支付，讓 AI 提供您最好的理財建議</p>
+              <ul class="d-flex gap-2 gap-md-4 mb-10">
+                <li><a class="tag-color px-3 py-1  rounded-pill" href="###">APP設計</a></li>
+                <li><a class="tag-color px-3 py-1 rounded-pill" href="###">iOS</a></li>
+                <li><a class="tag-color px-3 py-1 rounded-pill" href="###">React</a></li>
+              </ul>
+            </div>
+            <div class="d-flex justify-content-center">
+              <a class="intro-btn d-flex px-4 py-2 px-md-8 py-md-4 align-items-center" href="###">
+                完整介紹
+                <span class="material-symbols-rounded ms-2 align-middle">
+                  arrow_forward
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>    
+      </div>
+      <!-- 手機版 -->
+      <div class="work-content d-lg-none px-0 mt-6 mb-12">
+        <div class="work-border text-center mb-5 mb-md-10">
+          <h3 class="work-content-title fs-5 fs-md-3 mb-2 ">理財APP</h3>
+          <p class="work-content-text mb-4 mb-md-6">連動帳戶與行動支付，讓 AI 提供您最好的理財建議</p>
+          <ul class="d-flex justify-content-center gap-2 gap-md-4 mb-10">
+            <li><a class="tag-color px-3 py-1  rounded-pill" href="###">APP設計</a></li>
+            <li><a class="tag-color px-3 py-1 rounded-pill" href="###">iOS</a></li>
+            <li><a class="tag-color px-3 py-1 rounded-pill" href="###">React</a></li>
+          </ul>
+        </div>
+        <div class="d-flex justify-content-center">
+          <a class="intro-btn d-flex px-4 py-2 px-md-8 py-md-4 align-items-center" href="###">
+            完整介紹
+            <span class="material-symbols-rounded ms-2 align-middle">
+              arrow_forward
+            </span>
+          </a>
+        </div>
+      </div>
+      <!-- 醫美診所官網 -->
+      <div class="work beauty">
+        <div class="work-item container d-flex justify-content-center justify-content-lg-between align-items-center">
+          <img class="beauty-img mt-20" src="/assets/images/homepage-work3.png" alt="beauty">
+          <div class="work-content d-none d-lg-block px-0 px-md-10 pt-6 pb-0 pt-md-20 pb-md-14">
+            <div class="work-border border-bottom border-primary-200 mb-5 mb-md-10">
+              <h3 class="work-content-title fs-5 fs-md-3 mb-2 ">醫美診所官網</h3>
+              <p class="work-content-text text-white mb-4 mb-md-6">永保青春的秘密，從粹究開始</p>
+              <ul class="d-flex gap-2 gap-md-4 mb-10">
+                <li><a class="tag-color px-3 py-1  rounded-pill" href="###">網頁設計</a></li>
+                <li><a class="tag-color px-3 py-1 rounded-pill" href="###">響應試設計</a></li>
+                <li><a class="tag-color px-3 py-1 rounded-pill" href="###">ＷordPress</a></li>
+              </ul>
+            </div>
+            <div class="d-flex justify-content-center">
+              <a class="intro-btn d-flex px-4 py-2 px-md-8 py-md-4 align-items-center" href="###">
+                完整介紹
+                <span class="material-symbols-rounded ms-2 align-middle">
+                  arrow_forward
+                </span>
+              </a>
+            </div>
+          </div> 
+        </div>
+      </div>
+      <!-- 手機版 -->
+      <div class="work-content d-lg-none px-0 mt-6 mb-12">
+        <div class="work-border text-center mb-5 mb-md-10">
+          <h3 class="work-content-title fs-5 fs-md-3 mb-2 ">醫美診所官網</h3>
+          <p class="work-content-text mb-4 mb-md-6">永保青春的秘密，從粹究開始</p>
+          <ul class="d-flex justify-content-center gap-2 gap-md-4 mb-10">
+            <li><a class="tag-color px-3 py-1  rounded-pill" href="###">網頁設計</a></li>
+            <li><a class="tag-color px-3 py-1 rounded-pill" href="###">響應試設計</a></li>
+            <li><a class="tag-color px-3 py-1 rounded-pill" href="###">ＷordPress</a></li>
+          </ul>
+        </div>
+        <div class="d-flex justify-content-center">
+          <a class="intro-btn d-flex px-4 py-2 px-md-8 py-md-4 align-items-center" href="###">
+            完整介紹
+            <span class="material-symbols-rounded ms-2 align-middle">
+              arrow_forward
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- 服務項目 -->
+    <section class="py-30 service">
+      <div class="wrap mt-0">
+        <h2 class="title d-flex justify-content-center fs-4 fs-md-2 lh-sm mb-10 mb-md-20">
+          <span class="title-text service-title-text">服務項目</span>
+        </h2>
+      </div>
+      <div class="container">
+        <ul class="row gap-6 d-flex justify-content-center mb-10 mb-md-20">
+          <li class="col-12 col-lg-6 col-xxl-3 service-item rounded-4 d-flex flex-column align-items-center justify-content-center text-center">
+            <img class="mb-6" src="/assets/images/service-item-visual.svg" alt="visual">
+            <p class="fs-3 fw-bold text-white">平面設計</p>
+          </li>
+          <li class="col-12 col-lg-6 col-xxl-3 service-item rounded-4 d-flex flex-column align-items-center justify-content-center text-center">
+            <img class="mb-6" src="/assets/images/service-item-ui.svg" alt="ui">
+            <p class="fs-3 fw-bold text-white">UI 設計</p>
+          </li>
+          <li class="col-12 col-lg-6 col-xxl-3 service-item rounded-4 d-flex flex-column align-items-center justify-content-center text-center">
+            <img class="mb-6" src="/assets/images/service-item-html&css.svg" alt="html&css">
+            <p class="fs-3 fw-bold text-white">切版服務</p>
+          </li>
+          <li class="col-12 col-lg-6 col-xxl-3 service-item rounded-4 d-flex flex-column align-items-center justify-content-center text-center">
+            <img class="mb-6" src="/assets/images/service-item-front-end.svg" alt="front-end">
+            <p class="fs-3 fw-bold text-white">前端開發</p>
+          </li>
+        </ul>
+        <h3 class="fs-5 fs-md-3 lh-sm text-center mb-6 mb-md-10">想要合作或瞭解更多？</h3>
+        <div class="d-flex justify-content-center">
+          <a class="service-btn fs-6 fs-md-5 fw-bold px-8 py-4 align-items-center" href="###">詳細內容與合作流程<span class="material-symbols-rounded ms-2 align-middle">
+            arrow_forward
+          </span></a>
+        </div>
+        
+      </div>
+    </section>
+    
 
     <%- include('./layout/footer'); -%>
 
