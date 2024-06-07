@@ -1,3 +1,16 @@
+.navbar {
+  border-bottom: 1px solid $primary-200;
+  @include pad {
+    border: 0;
+  }
+}
+
+.menu {
+  @include pad {
+    border-top: 1px solid $primary-200;
+  }
+}
+
 .navbar-brand {
   padding: 0;
 }
@@ -10,14 +23,6 @@
 .close {
   display: none;
 }
-
-// ul .active {
-//   font-weight: bold;
-//   ::before,::after {
-//     opacity: 1;
-//     transition: all 0.3s ease;
-//   }
-// }
 
 .navbar-nav {
   --bs-nav-link-hover-color: $primary;
