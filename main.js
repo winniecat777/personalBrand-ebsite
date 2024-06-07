@@ -10,3 +10,27 @@ $('.btn').click(function() {
   $('.closure').toggleClass('close');
   $('menu').toggleClass('close');
 })
+
+// swiper
+const swiper = new Swiper(".swiper", {
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  grid: {
+    rows: 3,
+  },
+  breakpoints: {
+    768: {      
+      grid: {
+        rows: 1,
+      },
+      slidesPerView: 3,
+      spaceBetween: 24,
+    }
+  },
+  autoplay: {
+    delay: 2000,
+    pauseOnMouseEnter: true,
+  }
+});
