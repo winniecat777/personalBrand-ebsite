@@ -39,3 +39,63 @@ h1, p {
 .box-shadow-left {
   box-shadow: -1px 0px $primary-400;
 }
+
+// title
+.title  {
+  position: relative;
+  margin: 0 auto 80px;
+  width: 372px;
+  @include pad {
+    width: 249px;
+    height: 29px;
+  }
+}
+
+.title::before {
+  position: absolute;
+  content: "";
+  width: 372px;
+  height: 1px;
+  background-color: #c1c1c1;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  z-index: 0;
+}
+
+.title-text::before {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #C1C1C1;
+  border-radius: 50%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  @include pad {
+    left: -25%;
+  }
+}
+
+.title-text::after {
+  position: absolute;
+  content: '';
+  width: 6px;
+  height: 6px;
+  background-color: #C1C1C1;
+  border-radius: 50%;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  @include pad {
+    right: -25%;
+  }
+}
+
+.title-text {
+  color: #3b3b3b;
+  background: #fff;
+  z-index: 1;
+  padding: 0 16px;
+}
