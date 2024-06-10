@@ -1,15 +1,17 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables';
-@import './utils/maps';
-@import './utils/utilities';
+@import '../../node_modules/bootstrap/scss/maps';
+@import '../../node_modules/bootstrap/scss/mixins';
+@import '../../node_modules/bootstrap/scss/utilities';
 @import './utils/font';
+@import '../../node_modules/bootstrap/scss/utilities/api';
 @import "../../node_modules/bootstrap";
-@import 'bootstrap/scss/utilities/api';
 
 @import './mixins/breakpoints';
 @import './utils/base';
 
 @import './layout/header.scss';
+@import './layout/serviceCard';
 @import './layout/footer.scss';
 
 
